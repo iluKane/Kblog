@@ -9,6 +9,9 @@
   font-family: "font1";
   src: url("../font/AaXianXiaShaoNian-2.ttf");
 }
+body{
+  background-color: #f8f8f8;
+}
 .container {
   width: 1200px;
   height: auto;
@@ -24,7 +27,6 @@
 .headText {
   padding: 20px;
   border-radius: 14px;
-  border: 1px solid #000;
   background-color: #00b0f023;
   position: relative;
   overflow: hidden;
@@ -80,7 +82,6 @@
 }
 .headLink {
   border-radius: 16px;
-  border: 1px solid #000;
 }
 .headLink > .avatar {
   width: 100%;
@@ -238,8 +239,8 @@
 .sectionItem {
   width: 220px;
   height: 200px;
+  background-color: #fff;
   border-radius: 12px;
-  border: 1px solid #000;
   transition: all 0.2s;
 }
 .sectionItemTitle {
@@ -263,7 +264,7 @@
   width: 320px;
   height: 280px;
   border-radius: 12px;
-  border: 1px solid #000;
+  background-color: #fff;
 }
 footer {
   margin-top: 200px;
