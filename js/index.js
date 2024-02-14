@@ -153,11 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateElapsedTime() {
   const targetDate = new Date("2024-02-02T15:24:00");
-
   const currentDate = new Date();
-
   const timeDifference = currentDate - targetDate;
-
   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
     (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -166,17 +163,17 @@ function updateElapsedTime() {
     (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
   );
   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-  const elapsedTime = document.getElementById("elapsedTime");
-  elapsedTime.innerHTML = `
-    <span class="elapsedTimeText">本网站已运行</span>
-    <span class="elapsedTimeText">${days}</span>
-    <span class="elapsedTimeText">天</span>
-    <span class="elapsedTimeText">${hours}</span>
-    <span class="elapsedTimeText">小时</span>
-    <span class="elapsedTimeText">${minutes}</span>
-    <span class="elapsedTimeText">分钟</span>
-    <span class="elapsedTimeText">${seconds}</span>
-    <span class="elapsedTimeText">秒</span>`;
+  const d2 = document.getElementById("d2");
+  d2.innerHTML = `
+    <span class="d11">本网站已运行</span>
+    <span class="d11">${days}</span>
+    <span class="d11">天</span>
+    <span class="d11">${hours}</span>
+    <span class="d11">小时</span>
+    <span class="d11">${minutes}</span>
+    <span class="d11">分钟</span>
+    <span class="d11">${seconds}</span>
+    <span class="d11">秒</span>`;
 }
 updateElapsedTime();
 setInterval(updateElapsedTime, 1000);
