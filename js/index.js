@@ -1,13 +1,3 @@
-const linkControlPageText = document.querySelector(
-  ".linkControlPageText"
-);
-const textLength = linkControlPageText.scrollWidth;
-const animationDuration = textLength / 100;
-linkControlPageText.style.setProperty(
-  "--animation-duration",
-  `${animationDuration}s`
-);
-
 const data = {
   articles: [
     {
