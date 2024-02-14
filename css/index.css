@@ -6,120 +6,162 @@
   user-select: none;
 }
 @font-face {
-  font-family: "font1";
+  font-family: "kfont";
   src: url("../font/AaXianXiaShaoNian-2.ttf");
 }
 body {
-  background-color: #161616;
+  background-color: #00ddff33;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .container {
   width: 1200px;
   height: auto;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 40px;
 }
-.header {
-  width: 100%;
+.a {
+  height: 260px;
   display: grid;
   grid-template-columns: auto 320px;
-  gap: 20px;
-}
-.headText {
-  padding: 20px;
-  border-radius: 14px;
-  background-color: #0df;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-.logo {
-  grid-column: 1/4;
-  width: 200px;
+.a1 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff00 50%);
+  border: 2px solid #fff;
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.headText > .text {
-  line-height: 1.4;
-  font-size: 20px;
-  font-family: "font1";
+.a11 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.a11 > img:nth-child(2) {
+  height: 60px;
+  transform: translate(-15px, -15px);
+  scale: 2;
+}
+.a12 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  grid-gap: 20px;
   text-indent: 2em;
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: "kfont";
+  word-break: break-all;
 }
-.strongText {
-  font-size: 17px;
-  padding: 2px 6px;
+.a12_ {
+  background-color: #fff;
   border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 18px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #00b;
 }
-.headLink {
-  border-radius: 16px;
-}
-.headLink > .avatar {
+.a2 {
   width: 100%;
-  height: 60px;
-  border-radius: 16px 16px 0 0;
-  border-bottom: 3px solid #fff;
-  background-color: #0df;
-  position: relative;
-}
-.headLink > .links {
-  height: 220px;
-  border-radius: 0 0 16px 16px;
-  background-color: #00ffdd;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff00 50%);
+  border: 2px solid #fff;
+  border-radius: 14px;
   overflow: hidden;
 }
-.avatar img {
-  width: 60px;
-  border-radius: 30px;
-  border: 3px solid #fff;
+/* .element {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 0 0 1px #000;
+  border-radius: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-indent: 2em;
+  line-height: 1.2;
+  font-size: 10px;
+  font-family: serif;
+  font-weight: 600;
+  word-break: break-all;
+  text-shadow: 0 0 1px #000;
+  color: #00b;
+  transform: ;
+  animation: ;
+} */
+.a21 {
+  width: 100%;
+  height: 60px;
+  border-bottom: 3px solid #fff;
+  border-radius: 16px 16px 0 0;
+  position: relative;
+  display: flex;
+}
+.a211 {
   position: absolute;
-  top: 29px;
+  top: 30px;
   right: 30px;
 }
-.linkItem {
+.a211 > img {
+  width: 60px;
+  border-radius: 60px;
+  border: 3px solid #fff;
+}
+.a22 {
   height: 100%;
   height: 50px;
   padding: 10px;
   display: flex;
 }
-.linkItem > div {
+.a22_ {
   height: 30px;
   display: flex;
   margin-right: 10px;
-  background-color: #fff;
+  padding: 8px;
   border-radius: 20px;
-  padding: 8px 10px;
+  background-color: #fff;
 }
-.linkItem > div > img {
+.a22_1 {
   height: 14px;
 }
-.linkItem > div > .link {
+.a22_2 {
   height: 14px;
   margin-left: 4px;
   line-height: 14px;
-  font-size: 13px;
+  font-size: 12px;
   font-family: serif;
 }
-.linkElement {
-  height: 120px;
-  padding: 10px;
+.a23 {
+  height: 100px;
+  padding: 0 10px;
   display: flex;
 }
-.linkElementBox {
+.a23_ {
   width: 140px;
   min-width: 140px;
+  background-color: #fff;
   padding: 10px;
   border-radius: 10px;
   margin-right: 10px;
-  background-color: #fff;
   display: grid;
   grid-template-columns: 20px 100px;
   grid-template-rows: 40px 20px 20px;
   gap: 0px;
 }
-.linkElementBoxTitle {
+.a23_1 {
   grid-column: 1/3;
   padding: 4px;
   width: 100%;
@@ -127,52 +169,55 @@ body {
   font-family: serif;
   overflow: hidden;
 }
-.linkElementBoxTagIcon {
+.a23_2 {
   width: 20px;
   height: 20px;
 }
-.linkElementBoxTagIcon > img {
+.a23_2 > img {
   width: 12px;
   margin: 4px;
 }
-.linkElementBoxTagText {
+.a23_3 {
   height: 20px;
   font-size: 12px;
   line-height: 20px;
   color: pink;
   font-family: "Consolas", "Courier New", monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.linkControl {
+.a24 {
   width: 100%;
   height: 50px;
   padding: 10px;
-  border-top: 3px solid #fff;
+  border-radius: 0 0 16px 16px;
   display: grid;
   grid-template-columns: 30px 150px 30px 60px;
   gap: 10px;
 }
-.linkControlBack,
-.linkControlNext,
-.linkControlBackHoverBox,
-.linkControlNextHoverBox {
+.a241,
+.a243,
+.a2411,
+.a2431 {
   width: 30px;
   height: 30px;
   border-radius: 20px;
   background-color: #fff;
   transition: all 0.5s;
 }
-.linkControlImage {
-  height: 20px;
-  margin: 5.3px;
+.a24111 {
+  height: 16px;
+  margin: 7px;
 }
-.linkControlPage {
+.a242 {
   height: 30px;
   border-radius: 20px;
-  padding: 0 10px;
+  padding: 0 15px;
   background-color: #fff;
   white-space: nowrap;
 }
-.linkControlPageTextMask {
+.a2421 {
   width: 100%;
   overflow: hidden;
 }
@@ -181,53 +226,114 @@ body {
   line-height: 30px;
   font-size: 13px;
   display: inline-block;
-  animation: linkControlPageTextScroll var(--animation-duration) linear infinite;
 }
-@keyframes linkControlPageTextScroll {
-  0% {
-    transform: translateX(155px);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.a24211 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  display: inline-block;
 }
-.linkControlMore {
+.a244 {
   border-radius: 20px;
   line-height: 30px;
   text-align: center;
   background-color: #fff;
+  color: #0df;
   font-family: "Times New Roman", Times, serif;
 }
-.linkControlBackHoverBox.clicked {
+.a2411.clicked {
   transform: translateX(-5px) rotateZ(-30deg);
   transition: transform 0.2s ease-in-out;
 }
-.linkControlNextHoverBox.clicked {
+.a2431.clicked {
   transform: translateX(5px) rotateZ(30deg);
   transition: transform 0.2s ease-in-out;
 }
-.section {
-  margin: 40px 0 10px 0;
-  display: flex;
-  grid-gap: 10px;
+
+.b {
+  display: grid;
+  grid-template-columns: 265px 265px 265px 265px;
+  gap: 20px;
+  margin-top: 20px;
 }
-.sectionItem {
-  width: 220px;
-  height: 200px;
+.b1 {
+  border-radius: 14px;
+  position: relative;
+}
+.b11 {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(180deg, #00ddff 0%, #ffff 100%);
+}
+.b111 {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.b112 {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 14px;
   background-color: #fff;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+.b12 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: #fff;
+}
+.b121 {
+  width: 245px;
+  height: 100px;
   border-radius: 12px;
 }
-.sectionItemTitle {
+.b122 {
   width: 100%;
-  height: 45px;
-  border-radius: 12px 12px 0 0;
-  background-color: #0fd;
+  height: 30px;
+  margin-top: 10px;
+  display: flex;
+}
+.b1221 {
+  width: 30px;
+  height: 30px;
+}
+.b1221 > img {
+  width: 20px;
+  margin: 5px 0;
+  border-radius: 50%;
+}
+.b1222 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.b13 {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 0 0 14px 14px;
+  background: linear-gradient(0deg, #00ddff 0%, #ffff 100%);
+}
+.b131 {
+  width: 60px;
+  border: none;
+  border-radius: 20px;
+  line-height: 30px;
   text-align: center;
-  line-height: 45px;
-  font-family: serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #00b;
+  background-color: #fff;
+  color: #0df;
+  font-family: "Times New Roman", Times, serif;
 }
 .example {
   width: 100%;
@@ -239,9 +345,25 @@ body {
   height: 280px;
   border-radius: 12px;
   background-color: #fff;
+  padding: 10px;
+  background-image: url(https://picsum.photos/320);
+}
+.qw {
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 0 5px;
+}
+.asdf {
+  height: 20px;
+  font-size: 13px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2px 5px;
 }
 footer {
-  margin-top: 200px;
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
@@ -252,6 +374,6 @@ footer {
   padding: 10px;
   border-radius: 8px;
   background-color: #fff;
-  font-family: 'Consolas', 'Courier New', monospace;
+  font-family: "Consolas", "Courier New", monospace;
   font-size: 13px;
 }
