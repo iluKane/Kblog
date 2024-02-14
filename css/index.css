@@ -221,17 +221,12 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.linkControlPageText {
-  height: 30px;
-  line-height: 30px;
-  font-size: 13px;
-  display: inline-block;
-}
 .a24211 {
   height: 30px;
   line-height: 30px;
-  font-size: 13px;
+  font-size: 14px;
   display: inline-block;
+  color: #00ddff;
 }
 .a244 {
   border-radius: 20px;
