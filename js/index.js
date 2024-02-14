@@ -77,26 +77,26 @@ const data = {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const linkElement = document.getElementById("linkElement");
-  const linkControlBack = document.getElementById("linkControlBack");
-  const linkControlNext = document.getElementById("linkControlNext");
-  const linkControlPageText = document.getElementById("linkControlPageText");
+  const a23 = document.getElementById("a23");
+  const linkControlBack = document.getElementById("a241");
+  const linkControlNext = document.getElementById("a243");
+  const linkControlPageText = document.getElementById("a2421");
   const articles = data.articles;
   let currentIndex = 0;
 
   articles.forEach(function (article) {
-    const linkElementBox = document.createElement("div");
-    linkElementBox.className = "linkElementBox";
+    const a23_ = document.createElement("div");
+    a23_.className = "a23_";
 
-    linkElementBox.innerHTML = `
-      <div class="linkElementBoxTitle">${article.id}.${article.title}</div>
-      <div class="linkElementBoxTagIcon"><img src="img/type.svg" alt="" /></div>
-      <div class="linkElementBoxTagText">${article.type}</div>
-      <div class="linkElementBoxTagIcon"><img src="img/key.svg" alt="" /></div>
-      <div class="linkElementBoxTagText">${article.key}</div>
+    a23_.innerHTML = `
+      <div class="a23_1">${article.id}.${article.title}</div>
+      <div class="a23_2"><img src="img/type.svg" alt="" /></div>
+      <div class="a23_3">${article.type}</div>
+      <div class="a23_2"><img src="img/key.svg" alt="" /></div>
+      <div class="a23_3">${article.key}</div>
     `;
 
-    linkElement.appendChild(linkElementBox);
+    a23.appendChild(a23_);
   });
 
   updatePageText(articles[currentIndex].title);
@@ -117,24 +117,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function moveLinkElement() {
     const offset = -currentIndex * 150;
-    linkElement.style.transition = "transform 0.2s ease-in-out";
-    linkElement.style.transform = `translateX(${offset}px)`;
+    a23.style.transition = "transform 0.2s ease-in-out";
+    a23.style.transform = `translateX(${offset}px)`;
 
     setTimeout(() => {
-      linkElement.style.transition = "none";
+      a23.style.transition = "none";
     }, 200);
 
     updatePageText(articles[currentIndex].title);
   }
 
   function updatePageText(text) {
-    linkControlPageText.textContent = text;
+    a24211.textContent = text;
   }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const backHoverBox = document.querySelector(".linkControlBackHoverBox");
-  const nextHoverBox = document.querySelector(".linkControlNextHoverBox");
+  const backHoverBox = document.querySelector(".a2411");
+  const nextHoverBox = document.querySelector(".a2431");
 
   backHoverBox.addEventListener("click", function () {
     this.classList.toggle("clicked");
